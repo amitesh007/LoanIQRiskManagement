@@ -1,0 +1,171 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ page import="net.sf.json.*"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Credit Risk Management System</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	function fetchByBorrower() {
+		$('#body').load('fetchByBorrower.jsp');
+	}
+	
+	function fetchByDeal() {
+		$('#body').load('fetchByDeal.jsp');
+	}
+	
+	function loadDealStat() {
+		$('#body').load('dealStat.jsp');
+	}
+	function displayPastdueAging() {
+		$('#body').load('pastdueAging.jsp');
+	}
+	
+	function submitDeal(){
+		var dealIDSelected = document.getElementById("Deal_NAME_list1").value;
+		
+		console.log(dealIDSelected)
+		
+		$.ajax({
+				url: "fetchByDeal.jsp",
+				type: "post",
+				data: { dealID:dealIDSelected}
+
+		})
+		$('#body').load('fetchByDeal.jsp');
+	}
+	
+	function submitBorrower(){
+		var borrowerIDSelected = document.getElementById("Borrower_NAME_list1").value;
+		
+		console.log(borrowerIDSelected)
+		
+		$.ajax({
+				url: "fetchByBorrower.jsp",
+				type: "post",
+				data: { borrowerID:borrowerIDSelected}
+
+		})
+		$('#body').load('fetchByBorrower.jsp');
+	}
+</script>
+
+
+
+<style>
+table#DealDetails {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: center;
+	padding: 8px;
+	color: #373737;
+}
+
+tr, th {
+	color: #aa2cd2;
+	font-size: 14px;
+}
+
+tr:nth-child(odd) {
+	background-color: #ddd;
+}
+.collapsible {
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #d8d8d8;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: blue;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+ 
+ }  
+ 
+</style>
+</head>
+
+
+<body>
+
+	<div id="wrapper">
+		<div id="inner">
+			<div id="header">
+				<h1>
+					<!-- <img src="images/top_header.png" alt="Misys Top Header" />  -->
+				</h1>
+					<div id="most_top_header"></div>
+				<div id="nav">
+					<a href="https://www.finastra.com/">Visit Us</a> | <a
+						href="https://developer.fusionfabric.cloud/">Fusion Creator</a> |
+					<a href="https://developer.fusionfabric.cloud/documentation">Help</a>
+				</div>
+				<!-- end nav -->
+				<!-- <a href="http://blr2salp02:8080/CreditRiskMangement/">
+					<div id="main_header"><img id="nc_logo" src="images/liqrisk.png"></div>
+				</a>  -->
+				<a>
+				<h4>Credit Risk Management System</h4>
+				</a>
+			</div>
+
+			<!-- end header -->
+			<dl id="browse">
+				<dt>Credit Risk Services</dt>
+				<dd>
+					<a href="#">Fetch PastDue By Borrower</a>
+				</dd>
+				<dd>
+					<a href="#">Fetch PastDue By Deal</a>
+				</dd>	
+				<dd>
+					<a href="#">PastDue Aging for Borrower</a>
+				</dd> 
+			</dl>
+			
+				<div class="clear"></div>
+				<div id="footer">
+					Credit Risk Management Systems
+					<!-- end footer -->
+				</div>
+				<!-- end inner -->
+			</div>
+			<!-- end wrapper -->
+		</div>
+</body>
+</html>
