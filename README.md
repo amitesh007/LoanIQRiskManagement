@@ -18,29 +18,35 @@ C:\Professional\hackathon>java -jar LoanIQRiskManagementService-0.0.1-SNAPSHOT.j
 
 Download image - RunScript.png
 
+7. Copy the keystore to the same folder where executable jar and cofig files are copied.
 
-7. Services Details -
+8. Copy Index.html to the same folder where executable jar and cofig files are copied.
+    Double click on it, you will see a link for Login. Click on it and FFDC login page should appear.
+    Loggin to ffdc, and after that it will redirct to home.html page.
+    Now you can invoke below Service from the browser.
+    
+9. Services Details - 
 
-7.1. https://localhost/past-dues/customer/PZBAEV1G (serach past dues based on customer id.)
+9.1. https://localhost/past-dues/customer/PZBAEV1G (serach past dues based on customer id.)
 PZBAEV1G - borrowerId id
 Method - @GET
 Response -
 {"borrowerId":"PZBAEV1G","deals":[{"dealId":"KZBAF8BB","dealName":"BORROWER USD (6/12)","fees":[{"feeId":"KZBAFE2O","feeType":"ADMI","feeCyclePastDues":[{"dueAmount":"200000","currency":"USD","dueDate":"2019-06-17"}]}],"facilities":[{"facilityId":"00000229","outstandings":[{"outstandingType":"LOAN","outstandingAlias":"BORROWER C00007","interestDues":[{"interestDueAmount":"54657.53","currency":"CAD","interestDueDate":"2019-07-01"},{"interestDueAmount":"60513.7","currency":"CAD","interestDueDate":"2019-08-01"}]},{"outstandingType":"LOAN","outstandingAlias":"BORROWER U00001","interestDues":[{"interestDueAmount":"153424.66","currency":"USD","interestDueDate":"2019-07-01"},{"interestDueAmount":"169863.01","currency":"USD","interestDueDate":"2019-08-01"}]},{"outstandingType":"LOAN","outstandingAlias":"BORROWER U00008","interestDues":[{"interestDueAmount":"151666.67","currency":"USD","interestDueDate":"2019-07-25"}]},{"outstandingType":"LOAN","outstandingAlias":"BORROWER U00012","interestDues":[{"interestDueAmount":"13055.56","currency":"USD","interestDueDate":"2019-07-08"},{"interestDueAmount":"11831.6","currency":"USD","interestDueDate":"2019-08-06"}]},{"outstandingType":"LOAN","outstandingAlias":"BORROWER U00013","interestDues":[{"interestDueAmount":"758.33","currency":"USD","interestDueDate":"2019-07-25"}]}]},{"facilityId":"00000232","outstandings":[{"outstandingType":"LOAN","outstandingAlias":"BORROWER U00004","interestDues":[{"interestDueAmount":"46027.4","currency":"USD","interestDueDate":"2019-07-01"},{"interestDueAmount":"50958.9","currency":"USD","interestDueDate":"2019-08-01"}]}]}]},{"dealId":"KZBAFA5Q","dealName":"BORROWER USD & CAD (6/12)","fees":[{"feeId":"KZBAFE44","feeType":"ADMI","feeCyclePastDues":[{"dueAmount":"200000","currency":"USD","dueDate":"2019-06-17"}]}],"facilities":[{"facilityId":"00000233","outstandings":[{"outstandingType":"LOAN","outstandingAlias":"BORROWER C00010","interestDues":[{"interestDueAmount":"34520.55","currency":"CAD","interestDueDate":"2019-07-01"},{"interestDueAmount":"38219.18","currency":"CAD","interestDueDate":"2019-08-01"}]},{"outstandingType":"LOAN","outstandingAlias":"BORROWER C00008","interestDues":[{"interestDueAmount":"686805","currency":"JPY","interestDueDate":"2019-08-09"}]},{"outstandingType":"LOAN","outstandingAlias":"BORROWER U00011","interestDues":[{"interestDueAmount":"104270.83","currency":"USD","interestDueDate":"2019-07-25"}]}]},{"facilityId":"00000235","outstandings":[{"outstandingType":"LOAN","outstandingAlias":"BORROWER M00003","interestDues":[{"interestDueAmount":"932118","currency":"JPY","interestDueDate":"2019-07-16"}]},{"outstandingType":"LOAN","outstandingAlias":"BORROWER U00006","interestDues":[{"interestDueAmount":"110273.97","currency":"USD","interestDueDate":"2019-07-01"},{"interestDueAmount":"122089.04","currency":"USD","interestDueDate":"2019-08-01"}]}]}]}]}
 
-7.2. https://localhost/past-dues/deal/)2DEUUFB (serach past dues based on deal id.)
+9.2. https://localhost/past-dues/deal/)2DEUUFB (serach past dues based on deal id.)
 )2DEUUFB  - deal id
 Method - @GET
 Response -
 {"borrowerId":"NIB4LJ09","deals":[{"dealId":")2DEUUFB","dealName":"SYNDICATED TRANSACTION (DO NOT TOUCH)","facilities":[{"facilityId":"00001415","outstandings":[{"outstandingType":"LOAN","outstandingAlias":"CONSTRUCTI00022","principalDues":[{"principalDueAmount":"16559221.1","currency":"ILS","principalDueDate":"2019-07-29"}]},{"outstandingType":"LOAN","outstandingAlias":"LINKED","principalDues":[{"principalDueAmount":"33120000","currency":"ILS","principalDueDate":"2019-07-26"}]}]},{"facilityId":"00001416","outstandings":[{"outstandingType":"LOAN","outstandingAlias":"CONSTRUCTI00024","principalDues":[{"principalDueAmount":"276000000","currency":"ILS","principalDueDate":"2019-07-29"}]},{"outstandingType":"LOAN","outstandingAlias":"CONSTRUCTI00025","principalDues":[{"principalDueAmount":"368000000","currency":"ILS","principalDueDate":"2019-07-26"}]},{"outstandingType":"LOAN","outstandingAlias":"LINKED00030","principalDues":[{"principalDueAmount":"276000000","currency":"ILS","principalDueDate":"2019-07-26"}]}]}]}]}
 
-7.3. https://locahost/search/deals/dealName/SYNDICATE* (Search deals by deal names)
+9.3. https://locahost/search/deals/dealName/SYNDICATE* (Search deals by deal names)
 
 SYNDICATE*  - deal name with wildcard
 Method - @GET
 Response -
 {"dealIdentifiers":[{"id":"2f609712f80000b0","dealName":"SYNDICATED DEAL","alias":"SYNDICATED DEAL","trackingNumber":"212","alternateId":"GTD58LML","ansiId":"GTD58LML"},{"id":"30695c6c4b0000f6","dealName":"SYNDICATED TRAN (DO NOT TOUCH)","alias":"SYNDICATED DEAL IDB","trackingNumber":"262","alternateId":"?SDFKIZU","ansiId":"?SDFKIZU"},{"id":"30570555f20000e8","dealName":"SYNDICATED TRANSACTION (DO NOT TOUCH)","alias":"SYNDICATED TRANSACTI","trackingNumber":"253","alternateId":")2DEUUFB","ansiId":")2DEUUFB"}]}
 
-7.4. https://localhost/search/customers/legalName/Borrower* (Search customers by legal name)
+9.4. https://localhost/search/customers/legalName/Borrower* (Search customers by legal name)
 
 Borrower*  - customer name with wildcard
 Method - @GET
