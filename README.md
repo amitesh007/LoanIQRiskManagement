@@ -16,35 +16,7 @@ Steps to Run the aplication with execuatble jar-
 C:\Professional\hackathon>java -jar LoanIQRiskManagementService-0.0.1-SNAPSHOT.jar --spring.config.location=file:C:\Professional\hackathon\config.properties
 ----------------------------------------------------------------------------------Script--------------------------------------------------------------------
 
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v2.4.1)
-
-2020-12-18 10:12:54.426  INFO 64128 --- [           main] l.LoanIqRiskManagementServiceApplication : Starting LoanIqRiskManagementServiceApplication v0.0.1-SNAPSHOT using Java 11.0.8 on BLRLJ85LNN2 with PID 64128 (C:\Professional\hackathon\LoanIQRiskManagementService-0.0.1-SNAPSHOT.jar started by asrivas3 in C:\Professional\hackathon)
-2020-12-18 10:12:54.442  INFO 64128 --- [           main] l.LoanIqRiskManagementServiceApplication : No active profile set, falling back to default profiles: default
-WARNING: An illegal reflective access operation has occurred
-WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (jar:file:/C:/Professional/hackathon/LoanIQRiskManagementService-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/groovy-2.5.14.jar!/) to method java.lang.Object.finalize()
-WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
-WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
-WARNING: All illegal access operations will be denied in a future release
-2020-12-18 10:13:03.907  INFO 64128 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 443 (https)
-2020-12-18 10:13:04.029  INFO 64128 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-12-18 10:13:04.033  INFO 64128 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2020-12-18 10:13:04.054  INFO 64128 --- [           main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2020-12-18 10:13:04.063  INFO 64128 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
-2020-12-18 10:13:04.067  INFO 64128 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-12-18 10:13:04.076  INFO 64128 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-12-18 10:13:04.125  INFO 64128 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
-2020-12-18 10:13:04.500  INFO 64128 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-12-18 10:13:04.502  INFO 64128 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8600 ms
-2020-12-18 10:13:05.955  INFO 64128 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-18 10:13:08.589  INFO 64128 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 443 (https) with context path ''
-2020-12-18 10:13:08.637  INFO 64128 --- [           main] l.LoanIqRiskManagementServiceApplication : Started LoanIqRiskManagementServiceApplication in 17.184 seconds (JVM running for 20.434)
-
+Download image - RunScript.png
 
 
 7. Services Details -
