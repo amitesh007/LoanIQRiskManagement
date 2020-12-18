@@ -20,6 +20,7 @@ Download image - RunScript.png
 
 
 7. Services Details -
+
 7.1. https://localhost/past-dues/customer/PZBAEV1G (serach past dues based on customer id.)
 PZBAEV1G - borrowerId id
 Method - @GET
@@ -39,7 +40,7 @@ Method - @GET
 Response -
 {"dealIdentifiers":[{"id":"2f609712f80000b0","dealName":"SYNDICATED DEAL","alias":"SYNDICATED DEAL","trackingNumber":"212","alternateId":"GTD58LML","ansiId":"GTD58LML"},{"id":"30695c6c4b0000f6","dealName":"SYNDICATED TRAN (DO NOT TOUCH)","alias":"SYNDICATED DEAL IDB","trackingNumber":"262","alternateId":"?SDFKIZU","ansiId":"?SDFKIZU"},{"id":"30570555f20000e8","dealName":"SYNDICATED TRANSACTION (DO NOT TOUCH)","alias":"SYNDICATED TRANSACTI","trackingNumber":"253","alternateId":")2DEUUFB","ansiId":")2DEUUFB"}]}
 
-4. https://localhost/search/customers/legalName/Borrower* (Search customers by legal name)
+7.4. https://localhost/search/customers/legalName/Borrower* (Search customers by legal name)
 
 Borrower*  - customer name with wildcard
 Method - @GET
