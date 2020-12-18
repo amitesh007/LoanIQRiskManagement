@@ -13,8 +13,9 @@ Steps to Run the aplication with execuatble jar-
 6. After successful execution you should see following on your screen-
 Microsoft Windows [Version 10.0.17763.1577]
 (c) 2018 Microsoft Corporation. All rights reserved.
-
+----------------------------------------------------------------------------------Script--------------------------------------------------------------------
 C:\Professional\hackathon>java -jar LoanIQRiskManagementService-0.0.1-SNAPSHOT.jar --spring.config.location=file:C:\Professional\hackathon\config.properties
+----------------------------------------------------------------------------------Script--------------------------------------------------------------------
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
